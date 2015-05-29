@@ -1,0 +1,515 @@
+.h-clear, .Grid:after, .Grid-row,
+.Grid-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.h-verticalAlign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.h-isVisible {
+  opacity: 1;
+  display: inherit;
+}
+
+.h-isHidden {
+  opacity: 0;
+  display: none;
+}
+
+.h-lowercase {
+  text-transform: lowercase !important;
+}
+
+.h-preventScroll {
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.ContentContainer--fluid {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.ContentContainer--fixed {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.Content-Container--full {
+  width: 100%;
+  margin: 0;
+}
+
+.Grid {
+  margin: 0 auto 40px auto;
+}
+
+.Grid--withOutsideGutters {
+  padding: 40px 0 40px 40px;
+}
+.Grid--withOutsideGutters [class*='col-']:last-of-type {
+  padding-right: 40px;
+}
+
+[class*='Grid-col--'] {
+  float: left;
+  padding-right: 40px;
+  min-height: 1rem;
+}
+.Grid [class*='Grid-col--']:last-of-type {
+  padding-right: 0;
+}
+
+.Grid-col--span2of3 {
+  width: 66.66%;
+}
+
+.Grid-col--span1of3 {
+  width: 33.33%;
+}
+
+.Grid-col--span1of2 {
+  width: 50%;
+}
+
+.Grid-col--span1of4 {
+  width: 25%;
+}
+
+.Grid-col--span3of4 {
+  width: 75%;
+}
+
+.Grid-col--span1of8 {
+  width: 12.5%;
+}
+
+.Grid-col--span2of8 {
+  width: 25%;
+}
+
+.Grid-col--span3of8 {
+  width: 37.5%;
+}
+
+.Grid-col--span5of8 {
+  width: 62.5%;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Serif";
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6rem;
+}
+
+h1 {
+  font-family: "PT Serif";
+  font-weight: 800;
+  font-size: 10.0rem;
+  line-height: 10.0rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "PT Serif";
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: "PT Sans";
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.ButtonPrimary {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 7px 20px;
+  margin: 0 5px;
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+  font: normal 1.6rem Helvetica;
+}
+
+.ButtonPrimary {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.ButtonPrimary:hover {
+  background-color: #1a1a1a;
+}
+
+.Button--small {
+  font: normal 1.2rem Helvetica;
+}
+
+.LinkPrimary {
+  color: #333333;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid #F77170;
+}
+
+.LinkPrimary:hover {
+  color: #F77170;
+  padding: 0 0 3px 0;
+}
+
+.LinkPrimary.is-onDark {
+  color: #FFFFFF;
+}
+
+.LinkPrimary.is-onDark:hover {
+  color: #F77170;
+}
+
+.LinkForNav {
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  border: 2px solid transparent;
+  padding: 8px 10px;
+}
+
+.LinkForNav.is-onLight {
+  color: #666666;
+}
+
+.LinkForNav.is-onLight:hover {
+  border: 2px solid #666666;
+}
+
+.LinkForNav.is-onLight.is-selected {
+  color: #333333;
+  border: 2px solid #333333;
+}
+
+.LinkForNav.is-onDark {
+  color: #999999;
+}
+
+.LinkForNav.is-onDark:hover {
+  border: 2px solid #999999;
+}
+
+.LinkForNav.is-onDark.is-selected {
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+.LinkForNav.is-emphasized {
+  color: #FFD175;
+}
+
+.LinkForNav.is-emphasized:hover {
+  border: 2px solid #FFD175;
+}
+
+.LinkForNav.is-emphasized.is-selected {
+  color: #FFD175;
+  border: 2px solid #FFD175;
+}
+
+.LinkForNav--home {
+  text-decoration: none;
+  color: #CACFD5;
+}
+
+.LinkForNav--home:hover {
+  color: #666666;
+}
+
+.PrimaryNav {
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-content: stretch;
+  justify-content: flex-end;
+  max-width: 1280px;
+  padding: 50px 50px 0 50px;
+}
+
+.PrimaryNav-Home {
+  margin: 0;
+  font-family: "PT Serif";
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  flex: 1;
+  color: #999999;
+}
+
+.Content-Header {
+  margin: 0 auto 75px auto;
+  padding: 0;
+  background-color: #2E4C5F;
+}
+
+.Hero {
+  margin: 175px auto 0 auto;
+  padding: 75px 50px 90px 50px;
+  max-width: 1280px;
+  color: #FFFFFF;
+}
+
+.Hero-Question--fixed {
+  font-size: 4.8rem;
+  line-height: 6.8rem;
+  margin: 0;
+}
+
+.Hero-Question--rotated {
+  font-size: 4.8rem;
+  line-height: 6.8rem;
+  margin: 0 0 50px 0;
+  color: #F77170;
+  min-height: 70px;
+}
+
+.Hero-Pitch {
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  margin: 0;
+  color: #999999;
+}
+
+.Content-Footer {
+  clear: both;
+  border-top: 1px solid #e6e6e6;
+  margin: 75px auto 25px auto;
+}
+
+.FooterNav {
+  max-width: 1280px;
+  padding: 30px 100px;
+  margin: 25px auto 25px auto;
+}
+
+.FooterNav-SignOff {
+  font-family: "PT Serif";
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: none;
+  color: #CACFD5;
+  margin: 0;
+}
+
+.FooterNav-Contact {
+  font-family: "PT Sans";
+  font-size: 1.4rem;
+  color: #CACFD5;
+  margin: 75px 0 0 0;
+}
+
+.FooterNav-Copyright {
+  font-family: "PT Sans";
+  font-size: 1.2rem;
+  color: #CACFD5;
+  margin: 0;
+}
+
+.Content-Benefits {
+  padding: 0;
+}
+
+.BenefitsTitle {
+  font-size: 2.6rem;
+  line-height: 4.8rem;
+  max-width: 1280px;
+  margin: 0 auto 100px auto;
+  padding: 0 200px 0 50px;
+  color: #666666;
+}
+
+.BenefitsTitle-Intro {
+  font-family: "PT Serif";
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  font-style: italic;
+  color: #CCCCCC;
+  display: block;
+  border-bottom: solid 2px #CCCCCC;
+  width: 50px;
+  margin: 0 0 30px 0;
+}
+
+.BenefitsTitle-Highlight {
+  font-size: 4.6rem;
+  color: #4f83a4;
+}
+
+.Benefit--leftAlign, .Benefit--rightAlign {
+  margin: 0 auto 100px auto;
+  padding: 25px 0 0 0;
+  height: 525px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+}
+
+.Benefit--leftAlign {
+  background-position: 101% 0;
+}
+
+.Benefit--rightAlign {
+  background-position: 102% 0;
+  padding-left: 55%;
+}
+
+.Benefit--rightAlign:before,
+.Benefit--leftAlign:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 210px;
+  background-color: #F77170;
+  float: right;
+  margin: 0;
+  position: absolute;
+  right: 600px;
+  display: none;
+}
+
+.Benefit--1 {
+  background-image: url("../img/benefits/bg-Benefit--1.png");
+}
+
+.Benefit--2 {
+  background-image: url("../img/benefits/bg-Benefit--2.png");
+}
+
+.Benefit--3 {
+  background-image: url("../img/benefits/bg-Benefit--3.png");
+}
+
+.Benefit--4 {
+  background-image: url("../img/benefits/bg-Benefit--4.png");
+}
+
+.BenefitContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 50px 0 40px;
+}
+
+.BenefitContent-Title {
+  font-family: "PT Serif";
+  font-size: 2.0rem;
+  line-height: 3.2rem;
+  color: #666666;
+  background-color: #FFFFFF;
+  margin: 15px 0 5px 0;
+  padding: 10px;
+  max-width: 450px;
+}
+
+.BenefitContent-Copy {
+  font-family: "PT Serif";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #999999;
+  background-color: #FFFFFF;
+  margin: 0 0 15px 0;
+  padding: 10px;
+  max-width: 450px;
+}
+
+.BenefitExample {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 50px 0 40px;
+}
+
+.BenefitExample-Copy {
+  color: #999999;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-size: 1.6rem;
+  max-width: 410px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.BenefitExample-Figure {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: #666666;
+  border-bottom: 3px solid #666666;
+  background-color: #FFFFFF;
+  display: block;
+  margin: 100px 0 0 10px;
+  padding: 10px 10px 0 0;
+  width: 20px;
+}
