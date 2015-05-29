@@ -1,0 +1,24 @@
+# Site settings
+title: >
+    Research App Landing Page
+email: hi@ouremail.com
+description: >
+    The landing page for our new research app.
+baseurl: "" # If this site runs in a subdirectory (e.g. /blog/) specify it here.
+url: "http://www.[TBD].com" # The base hostname & protocol for your site.
+
+defaults:
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: default
+
+# Build settings
+destination: ./www
+permalink: pretty
+
+sass:
+    sass_dir: ./assets/css
+    style: :expanded
+    
+markdown: kramdown

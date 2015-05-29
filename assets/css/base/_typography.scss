@@ -1,0 +1,76 @@
+// Typography
+// -------------------------
+
+// LOAD WEB FONTS
+
+// For Hosted Web Fonts -------
+// ex: @include FontFace--hosted(Name, 'http://fonts.hudl.com/trade-gothic/regular/regular', normal);
+
+// For Linked Web Fonts -------
+// ex: @include FontFace--linked(kepler-std-display);
+@include FontFace--linked("PT Sans");
+@include FontFace--linked("PT Serif");
+
+// Font Stack
+$font_serif:    "PT Serif";
+$font_sans:     "PT Sans";
+
+html {
+    font-size: 62.5%; // Sets a base font size so 1.4rem = 14px
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6rem;
+}
+
+h1 {
+    font-family: $font_serif;
+    font-weight: 800;
+    font-size: 10.0rem;
+    line-height: 10.0rem;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: $font_serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: $font_serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: $font_sans;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 0;   
+}
+
+h5 {
+    font-family: $font_sans;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin: 0;
+    padding: 0;   
+}
+
+p {
+    font-family: $font_sans;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
