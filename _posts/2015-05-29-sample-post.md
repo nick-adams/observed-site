@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Sample Post Title
 permalink: /blog/:title/
 ---
