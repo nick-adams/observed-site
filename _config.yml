@@ -8,10 +8,12 @@ baseurl: "" # If this site runs in a subdirectory (e.g. /blog/) specify it here.
 url: "http://www.[TBD].com" # The base hostname & protocol for your site.
 
 defaults:
+    # Make all blog posts use the blog layout
     scope:
-      path: "" # empty string for all files
+      path: ""
+      type: "posts"
     values:
-      layout: default
+      layout: blog
 
 # Build settings
 destination: ./www

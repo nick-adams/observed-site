@@ -15,7 +15,11 @@
     @import     "base/buttons+links";
     @import     "base/navigation";
 
-// -- Content & Regions -- 
-    @import     "content/header";
-    @import     "content/footer";
-    @import     "content/home";
+// -- Shared Styles -- 
+    @import     "shared/header";
+    @import     "shared/footer";
+
+// -- Page Specific Styles -- 
+    @import     "pages/home";
+    @import     "pages/blog";
+
