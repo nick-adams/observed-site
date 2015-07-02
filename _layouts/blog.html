@@ -7,7 +7,19 @@
 
     {% include header-blog.html %}
 
-    {{ content }}
+    <section class="ContentContainer--full BlogContent">
+
+        <article class="BlogPost">
+
+        <div class="BlogPost-Metadata">
+            by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }} 
+        </div>
+
+        {{ content }}
+
+        </article>
+
+    </section>
 
     <!-- should include footer-blog.html -->
 

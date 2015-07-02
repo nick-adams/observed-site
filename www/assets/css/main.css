@@ -27,6 +27,10 @@
   text-transform: lowercase !important;
 }
 
+.h-uppercase {
+  text-transform: uppercase !important;
+}
+
 .h-preventScroll {
   overflow: hidden;
 }
@@ -226,67 +230,17 @@ p {
   padding: 0 0 3px 0;
 }
 
-.LinkPrimary.is-onDark {
-  color: #FFFFFF;
-}
-
-.LinkPrimary.is-onDark:hover {
-  color: #F5A623;
-}
-
-.LinkForNav {
-  text-decoration: none;
-  letter-spacing: 0.1rem;
-  border: 2px solid transparent;
-  padding: 8px 10px;
-}
-
-.LinkForNav.is-onLight {
-  color: #666666;
-}
-
-.LinkForNav.is-onLight:hover {
-  border: 2px solid #666666;
-}
-
-.LinkForNav.is-onLight.is-selected {
-  color: #333333;
-  border: 2px solid #333333;
-}
-
-.LinkForNav.is-onDark {
+.Link--return {
+  font-size: 1.3rem;
+  font-family: "PT Sans";
   color: #999999;
-}
-
-.LinkForNav.is-onDark:hover {
-  border: 2px solid #999999;
-}
-
-.LinkForNav.is-onDark.is-selected {
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
-}
-
-.LinkForNav.is-emphasized {
-  color: #FFD175;
-}
-
-.LinkForNav.is-emphasized:hover {
-  border: 2px solid #FFD175;
-}
-
-.LinkForNav.is-emphasized.is-selected {
-  color: #FFD175;
-  border: 2px solid #FFD175;
-}
-
-.LinkForNav--home {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   text-decoration: none;
-  color: #CACFD5;
 }
 
-.LinkForNav--home:hover {
-  color: #666666;
+.Link--return:hover {
+  color: #172F3D;
 }
 
 .PrimaryNav {
@@ -515,17 +469,102 @@ p {
 }
 
 .BlogHeader {
-  margin-left: 50px;
+  margin: 0 0 75px 10%;
+  padding: 50px 0 0 0;
   font-family: "PT Serif";
 }
 
 .BlogTitle {
   font-family: "PT Serif";
   font-weight: 400;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 2.6rem;
+  color: #172F3D;
+  margin: 20px 10% 20px 0;
+}
+
+.BlogTitle--alt {
+  color: #F5A623;
 }
 
 .BlogDescription {
+  font-family: "PT Sans";
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #999999;
+  max-width: 760px;
+  margin: 0 10% 40px 0;
+}
+
+.BlogByline {
   font-family: "PT Serif";
+  font-size: 1.3rem;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #999999;
+  padding: 10px 10% 0 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.BlogContent {
+  margin: 0 0 75px 10%;
+}
+
+.BlogPost {
+  max-width: 760px;
+  margin: 0 0 175px 0;
+}
+
+.BlogPost-Metadata {
+  display: inline-block;
+  border-top: 2px solid #999999;
+  padding: 5px 0 0 0;
+  margin: 0 0 35px 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.BlogPost h2 {
+  font-family: "PT Serif";
+  font-size: 4.6rem;
+  line-height: 5.2rem;
+  color: #333333;
+  margin: 0 0 50px 0;
+}
+
+.BlogPost h3 {
+  font-family: "PT Sans";
+  font-size: 2.2rem;
+  line-height: 4.0rem;
+  color: #999999;
+  padding: 0 0 0 100px;
+  margin: 0 0 30px 0;
+}
+
+.BlogPost p {
+  font-family: "PT Serif";
+  font-size: 1.7rem;
+  line-height: 3.8rem;
+  color: #333333;
+  padding: 0 0 0 100px;
+}
+
+.BlogPost img {
+  display: inline-block;
+  margin: 25px 0 25px -100px;
+  max-width: 760px;
+}
+
+.BlogPost blockquote > p {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  color: #666666;
+  display: inline-block;
+  text-align: center;
+  margin: 25px 0 25px 0;
 }
