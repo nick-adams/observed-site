@@ -136,7 +136,7 @@ a {
 }
 html {
   font-size: 62.5%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.6rem;
@@ -516,12 +516,11 @@ p {
   margin: 0 0 175px 0;
 }
 
-.BlogPost-Metadata {
+.BlogPost-Byline {
   display: inline-block;
-  border-top: 2px solid #999999;
   padding: 5px 0 0 0;
   margin: 0 0 35px 0;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #999999;
@@ -532,7 +531,7 @@ p {
   font-size: 4.6rem;
   line-height: 5.2rem;
   color: #333333;
-  margin: 0 0 50px 0;
+  margin: 20px 0 20px 0;
 }
 
 .BlogPost h3 {

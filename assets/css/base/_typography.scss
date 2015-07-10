@@ -17,7 +17,7 @@ $font_sans:     "PT Sans";
 
 html {
     font-size: 62.5%; // Sets a base font size so 1.4rem = 14px
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: $font_sans, Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1.6rem;

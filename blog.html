@@ -1,12 +1,19 @@
 ---
-layout: blog
+layout: blog-home
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<section class="ContentContainer--full BlogContent">
+
+    {% for post in site.posts %}
+        <div class="BlogPost ">
+            <p class="BlogPost-Metadata">by {{ post.author }} on {{ post.date | date: '%B %d, %Y' }}
+</p>
+            <a href="{{ post.url }}">
+                <h2>{{ post.title }}</h2>
+            </a>
+            <h3>{{ post.excerpt }}</h3>
+        </div>
+    {% endfor %}
+
+</section>
+
