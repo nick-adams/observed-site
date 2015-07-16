@@ -1,7 +1,8 @@
 ---
-layout: blog-home
+layout: blog
 ---
 
+<!-- Blog Post Layout -->
 <section class="ContentContainer--full BlogContent">
 
     <article class="BlogPost">
@@ -9,6 +10,10 @@ layout: blog-home
         <a class="Link--return" href="{{ site.baseurl }}/blog/">&larr; All Posts</a>
 
         {{ content }}
+
+        <div class="BlogPost-Byline">
+            by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}
+        </div>
 
     </article>
 

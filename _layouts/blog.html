@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Blog Layout -->
 
     {% include head.html %}
 
@@ -7,21 +8,9 @@
 
     {% include header-blog.html %}
 
-    <section class="ContentContainer--full BlogContent">
-
-        <article class="BlogPost">
-
-        <div class="BlogPost-Metadata">
-            by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }} 
-        </div>
-
         {{ content }}
 
-        </article>
-
-    </section>
-
-    <!-- should include footer-blog.html -->
+    <!-- should include footer-blog.html ? -->
 
     {% include scripts.html %}
 

@@ -47,6 +47,14 @@
             padding: 0 0 3px 0;
         }
     
+    .Link--postTitle {
+        color: $text_dark_color;
+        text-decoration: none;
+    }
+        .Link--postTitle:hover {
+            color: $primary_color;
+        }
+
     .Link--return {
         font-size: 1.3rem;
         font-family: $font_sans;

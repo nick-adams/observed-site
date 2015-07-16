@@ -8,12 +8,12 @@
 
 // For Linked Web Fonts -------
 // ex: @include FontFace--linked(kepler-std-display);
-@include FontFace--linked("PT Sans");
+@include FontFace--linked("Open Sans");
 @include FontFace--linked("PT Serif");
 
 // Font Stack
 $font_serif:    "PT Serif";
-$font_sans:     "PT Sans";
+$font_sans:     "Open Sans";
 
 html {
     font-size: 62.5%; // Sets a base font size so 1.4rem = 14px

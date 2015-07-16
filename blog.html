@@ -1,17 +1,21 @@
 ---
-layout: blog-home
+layout: blog
 ---
 
+<!-- Blog Index Page (/blog) -->
 <section class="ContentContainer--full BlogContent">
-
+    
+    <!-- All Blog Posts  -->
     {% for post in site.posts %}
-        <div class="BlogPost ">
-            <p class="BlogPost-Metadata">by {{ post.author }} on {{ post.date | date: '%B %d, %Y' }}
-</p>
-            <a href="{{ post.url }}">
-                <h2>{{ post.title }}</h2>
-            </a>
-            <h3>{{ post.excerpt }}</h3>
+        <div class="BlogPostItem ">
+            <p class="BlogPostItem-Metadata">
+                <!-- by {{ post.author }} on  -->
+                {{ post.date | date: '%B %d, %Y' }}
+            </p>
+            <h2 class="BlogPostItem-Title">
+                <a href="{{ post.url }}" class="Link--postTitle">{{ post.title }}</a>
+            </h2>
+            <h3 class="BlogPostItem-Excerpt">{{ post.excerpt }}</h3>
         </div>
     {% endfor %}
 
