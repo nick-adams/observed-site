@@ -11,13 +11,14 @@
     padding: 50px 50px 0 50px;
 }
     .PrimaryNav-Home {
+        position: relative;
         margin: 0;
         font-family: $font_serif;
         font-size: 2.0rem;
         text-transform: uppercase;
         letter-spacing: 0.25rem;
         flex: 1;
-        color: $gray_light_color;
+        color: $gray_xlight_color;
     }
     // .PrimaryNav-List--h {
     //     display: inline;

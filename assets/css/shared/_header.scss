@@ -2,18 +2,40 @@
 // -------------------------
 
 .Content-Header {
+    position: relative;
     margin: 0 auto 75px auto;
     padding: 0;
     background-color: $dark_color;
+    background-image: url("../img/bg-header.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+    .Content-Header:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        // background: -moz-linear-gradient(-45deg, rgba(23,47,61,0.92) 0%, rgba(19,99,146,0.95) 100%);
+        // background: -webkit-linear-gradient(-45deg, rgba(23,47,61,0.92) 0%,rgba(19,99,146,0.95) 100%);
+        // background: linear-gradient(135deg, rgba(23,47,61,0.92) 0%,rgba(19,99,146,0.95) 100%);    
+        background: -moz-linear-gradient(-45deg, rgba(23,47,61,0.92) 0%, rgba(0,0,0,0.95) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(23,47,61,0.92) 0%,rgba(0,0,0,0.95) 100%);
+        background: linear-gradient(135deg, rgba(23,47,61,0.92) 0%,rgba(0,0,0,0.95) 100%); 
+    }
 
 .Hero {
+    position: relative;
     margin: 175px auto 0 auto;
     padding: 75px 50px 90px 50px;
     max-width: $max-width;
     color: $white_color;
     // border-bottom: 1px solid lighten($gray_xlight, 10%);
 }
+
     .Hero-Question--fixed {
         font-size: 4.8rem;
         line-height: 6.8rem;

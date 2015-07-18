@@ -125,7 +125,7 @@ a {
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-weight: normal;
   font-style: normal;
 }
@@ -136,7 +136,7 @@ a {
 }
 html {
   font-size: 62.5%;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Karla", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.6rem;
@@ -170,7 +170,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-weight: 800;
   font-size: 1.8rem;
   line-height: 1.8rem;
@@ -179,7 +179,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -188,7 +188,7 @@ h5 {
 }
 
 p {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.8rem;
@@ -241,7 +241,7 @@ p {
 
 .Link--return {
   font-size: 1.3rem;
-  font-family: "Open Sans";
+  font-family: "Karla";
   color: #999999;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -262,22 +262,42 @@ p {
 }
 
 .PrimaryNav-Home {
+  position: relative;
   margin: 0;
   font-family: "PT Serif";
   font-size: 2.0rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   flex: 1;
-  color: #999999;
+  color: #CCCCCC;
 }
 
 .Content-Header {
+  position: relative;
   margin: 0 auto 75px auto;
   padding: 0;
   background-color: #172F3D;
+  background-image: url("../img/bg-header.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Content-Header:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: -moz-linear-gradient(-45deg, rgba(23, 47, 61, 0.92) 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(23, 47, 61, 0.92) 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(23, 47, 61, 0.92) 0%, rgba(0, 0, 0, 0.95) 100%);
 }
 
 .Hero {
+  position: relative;
   margin: 175px auto 0 auto;
   padding: 75px 50px 90px 50px;
   max-width: 1280px;
@@ -328,14 +348,14 @@ p {
 }
 
 .FooterNav-Contact {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-size: 1.4rem;
   color: #CACFD5;
   margin: 75px 0 0 0;
 }
 
 .FooterNav-Copyright {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-size: 1.2rem;
   color: #CACFD5;
   margin: 0;
@@ -478,8 +498,8 @@ p {
 }
 
 .BlogHeader {
-  margin: 0 0 75px 10%;
-  padding: 50px 0 0 0;
+  margin: 0 0 70px 10%;
+  padding: 25px 0 0 0;
   font-family: "PT Serif";
 }
 
@@ -497,12 +517,12 @@ p {
 }
 
 .BlogDescription {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-size: 1.6rem;
   line-height: 2.8rem;
   color: #999999;
   max-width: 760px;
-  margin: 0 10% 40px 0;
+  margin: 0 10% 20px 0;
 }
 
 .BlogByline {
@@ -526,8 +546,8 @@ p {
 
 .BlogPostItem-Metadata {
   display: inline-block;
-  border-top: 2px solid #999999;
-  font-family: "Open Sans";
+  border-top: 2px solid #666666;
+  font-family: "Karla";
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
@@ -545,11 +565,11 @@ p {
 }
 
 .BlogPostItem-Excerpt {
-  font-family: "Open Sans";
-  font-size: 1.6rem;
+  font-family: "Karla";
+  font-size: 1.8rem;
   line-height: 2.8rem;
   max-width: 70%;
-  color: #666666;
+  color: #999999;
   margin: 0px 0 20px 0;
 }
 
@@ -573,12 +593,12 @@ p {
   font-size: 4.6rem;
   line-height: 5.2rem;
   color: #333333;
-  margin: 50px 0 40px 0;
+  margin: 25px 0 40px 0;
 }
 
 .BlogPost h3 {
-  font-family: "Open Sans";
-  font-size: 2.0rem;
+  font-family: "Karla";
+  font-size: 2.2rem;
   line-height: 4.6rem;
   color: #999999;
   padding: 0 0 0 100px;
@@ -587,7 +607,7 @@ p {
 
 .BlogPost p {
   font-family: "PT Serif";
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 3.8rem;
   color: #333333;
   padding: 0 0 0 100px;
@@ -600,7 +620,7 @@ p {
 }
 
 .BlogPost blockquote > p {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-style: italic;
   font-size: 2.8rem;
   line-height: 3.6rem;
