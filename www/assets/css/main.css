@@ -253,6 +253,19 @@ p {
   color: #172F3D;
 }
 
+.Link--returnOnDark {
+  font-size: 1.3rem;
+  font-family: "Karla";
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+.Link--returnOnDark:hover {
+  color: #FFFFFF;
+}
+
 .PrimaryNav {
   margin: 0 auto 0 auto;
   display: flex;
@@ -556,9 +569,10 @@ p {
 }
 
 .BlogHeader {
-  margin: 0 0 70px 6%;
-  padding: 25px 0 0 0;
+  margin: 0 0 70px 0;
+  padding: 25px 0 25px 6%;
   font-family: "PT Serif";
+  background-color: #172F3D;
 }
 
 .BlogTitle {
@@ -566,7 +580,7 @@ p {
   font-weight: 400;
   font-size: 3.2rem;
   line-height: 2.6rem;
-  color: #172F3D;
+  color: #FFFFFF;
   margin: 20px 10% 20px 0;
 }
 
@@ -591,7 +605,7 @@ p {
   text-transform: uppercase;
   color: #999999;
   padding: 10px 10% 0 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #22465b;
 }
 
 .BlogContent {
@@ -647,7 +661,7 @@ p {
   margin: 0 0 175px 0;
 }
 
-.BlogPost h2 {
+.BlogPost-Title {
   font-family: "PT Serif";
   font-size: 4.6rem;
   line-height: 5.2rem;
@@ -655,7 +669,7 @@ p {
   margin: 25px 0 40px 0;
 }
 
-.BlogPost h3 {
+.BlogPost-Excerpt {
   font-family: "Karla";
   font-size: 2.2rem;
   line-height: 4.6rem;

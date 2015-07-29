@@ -7,17 +7,20 @@ description: >
 baseurl: "" # If this site runs in a subdirectory (e.g. /blog/) specify it here.
 url: "http://www.[TBD].com" # The base hostname & protocol for your site.
 
+# Build settings
+destination: ./www
+permalink: pretty
+
+# Content Settings
 defaults:
-    # Make all blog posts use the blog layout
+  - 
+    # Make all blog posts use the blog layout and define permalink
     scope:
       path: ""
       type: "posts"
     values:
-      layout: blog
-
-# Build settings
-destination: ./www
-permalink: pretty
+      layout: "blog-post"
+      permalink: "/blog/:year/:title"
 
 sass:
     sass_dir: ./assets/css

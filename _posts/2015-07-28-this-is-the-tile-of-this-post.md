@@ -1,15 +1,9 @@
 ---
-layout: blog-post
-title: This is the title of this post and it may be this long
+title: This Is The Title Of This Post
 excerpt: 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus pretium interdum. Ut ac posuere risus. Phasellus vestibulum eget leo ut viverra. Mauris sollicitudin augue vitae orci lobortis tempus.
 author: Nick Adams
-permalink: /blog/:title
 ---
-
-##This is the title of this post and it may be this long
-
-###Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus pretium interdum. Ut ac posuere risus. Phasellus vestibulum eget leo ut viverra. Mauris sollicitudin augue vitae orci lobortis tempus. 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus pretium interdum. Ut ac posuere risus. Phasellus vestibulum eget leo ut viverra. Mauris sollicitudin augue vitae orci lobortis tempus. Donec id velit ultricies, convallis ligula nec, convallis nibh. Aliquam pharetra sit amet diam non suscipit. Donec dictum vestibulum feugiat. Vivamus varius, purus at cursus laoreet, nibh risus luctus nulla, a egestas mauris mi ac odio. Nulla diam elit, maximus sit amet metus sed, aliquam porttitor velit.
 
