@@ -4,7 +4,7 @@ title: This is the title of this post and it may be this long
 excerpt: 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus pretium interdum. Ut ac posuere risus. Phasellus vestibulum eget leo ut viverra. Mauris sollicitudin augue vitae orci lobortis tempus.
 author: Nick Adams
-permalink: /blog/:title/
+permalink: /blog/:title
 ---
 
 ##This is the title of this post and it may be this long
