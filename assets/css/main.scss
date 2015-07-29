@@ -4,12 +4,12 @@
 
 // -- Utilty Styles --
     @import     "utility/variables+configs";
-    @import     "utility/colors";
     @import     "utility/mixins";
     @import     "utility/helpers";
 
 // -- Base Styles --
     @import     "base/global";
+    @import     "base/colors";
     @import     "base/layout+grid";
     @import     "base/typography";
     @import     "base/buttons+links";

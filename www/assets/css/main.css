@@ -198,19 +198,20 @@ p {
   display: inline-block;
   border-radius: 4px;
   padding: 7px 20px;
-  margin: 0 5px;
+  margin: 5px 0;
   min-width: 150px;
   text-align: center;
   text-decoration: none;
-  font: normal 1.6rem Helvetica;
+  font: normal 1.8rem "Karla";
 }
 
 .ButtonPrimary {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #172F3D;
+  border: 2px solid #F5A623;
 }
 .ButtonPrimary:hover {
-  background-color: #1a1a1a;
+  background-color: #F5A623;
+  color: #FFFFFF;
 }
 
 .Button--small {
@@ -362,11 +363,11 @@ p {
   margin: 0;
 }
 
-.Content-Benefits {
+.Content-Home {
   padding: 0;
 }
 
-.BenefitsTitle {
+.OpeningLetter {
   font-size: 2.6rem;
   line-height: 4.8rem;
   max-width: 1280px;
@@ -375,131 +376,55 @@ p {
   color: #666666;
 }
 
-.BenefitsTitle-Intro {
+.OpeningLetter p {
   font-family: "PT Serif";
-  font-size: 2.2rem;
-  line-height: 3.4rem;
-  font-style: italic;
-  color: #CCCCCC;
-  display: block;
-  border-bottom: solid 2px #CCCCCC;
-  width: 50px;
-  margin: 0 0 30px 0;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  max-width: 70%;
 }
 
-.BenefitsTitle-Highlight {
-  font-size: 4.6rem;
-  color: #336887;
-}
-
-.Benefit--leftAlign, .Benefit--rightAlign {
-  margin: 0 auto 100px auto;
-  padding: 25px 0 0 0;
-  height: 525px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-width: 1024px;
-}
-
-.Benefit--leftAlign {
-  background-position: 101% 0;
-}
-
-.Benefit--rightAlign {
-  background-position: 102% 0;
-  padding-left: 55%;
-}
-
-.Benefit--rightAlign:before,
-.Benefit--leftAlign:before {
-  content: "";
-  position: absolute;
-  width: 110px;
-  height: 210px;
-  background-color: #F5A623;
-  float: right;
-  margin: 0;
-  position: absolute;
-  right: 600px;
-  display: none;
-}
-
-.Benefit--1 {
-  background-image: url("../img/benefits/bg-Benefit--1.png");
-}
-
-.Benefit--2 {
-  background-image: url("../img/benefits/bg-Benefit--2.png");
-}
-
-.Benefit--3 {
-  background-image: url("../img/benefits/bg-Benefit--3.png");
-}
-
-.Benefit--4 {
-  background-image: url("../img/benefits/bg-Benefit--4.png");
-}
-
-.BenefitContent {
+.LatestBlogPosts {
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 50px 50px 0 40px;
+  margin: 0 auto 0;
+  padding: 75px 50px;
+  background-color: #f7f7f7;
 }
 
-.BenefitContent-Title {
-  font-family: "PT Serif";
-  font-size: 2.0rem;
-  line-height: 3.2rem;
+.LatestBlogPosts-Title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  border-top: 2px solid #666666;
   color: #666666;
-  background-color: #FFFFFF;
-  margin: 15px 0 5px 0;
-  padding: 10px;
-  max-width: 450px;
+  text-transform: uppercase;
+  padding: 10px 0 0 0;
+  display: inline-block;
 }
 
-.BenefitContent-Copy {
-  font-family: "PT Serif";
+.LatestBlogPosts-List {
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 50px 0;
+  padding: 0;
+}
+
+.LatestBlogPosts-List li {
+  margin: 50px 0;
+}
+
+.LatestBlogPost-Date {
   font-size: 1.6rem;
-  line-height: 2.6rem;
+  text-transform: uppercase;
   color: #999999;
-  background-color: #FFFFFF;
-  margin: 0 0 15px 0;
-  padding: 10px;
-  max-width: 450px;
 }
 
-.BenefitExample {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 50px 0 40px;
-}
-
-.BenefitExample-Copy {
-  color: #999999;
-  font-family: "PT Serif";
-  font-style: italic;
-  font-size: 1.6rem;
-  max-width: 410px;
-  background-color: #FFFFFF;
-  padding: 10px;
-}
-
-.BenefitExample-Figure {
-  font-family: "PT Serif";
-  font-style: italic;
-  font-size: 1.6rem;
-  line-height: 1.8rem;
-  color: #666666;
-  border-bottom: 3px solid #666666;
-  background-color: #FFFFFF;
-  display: block;
-  margin: 100px 0 0 10px;
-  padding: 10px 10px 0 0;
-  width: 20px;
+.LatestBlogPost-Title {
+  font-weight: 800;
 }
 
 .BlogHeader {
-  margin: 0 0 70px 10%;
+  margin: 0 0 70px 6%;
   padding: 25px 0 0 0;
   font-family: "PT Serif";
 }
@@ -538,11 +463,11 @@ p {
 }
 
 .BlogContent {
-  margin: 0 0 75px 10%;
+  margin: 0 0 75px 6%;
 }
 
 .BlogPostItem {
-  margin: 0 0 175px 0;
+  margin: 0 0 75px 0;
 }
 
 .BlogPostItem-Metadata {
@@ -560,16 +485,17 @@ p {
 .BlogPostItem-Title {
   font-family: "PT Serif";
   font-size: 3.2rem;
+  line-height: 4.4rem;
   color: #333333;
-  margin: 20px 0 20px 0;
-  max-width: 70%;
+  margin: 15px 0 15px 0;
+  max-width: 60%;
 }
 
 .BlogPostItem-Excerpt {
   font-family: "Karla";
   font-size: 1.8rem;
   line-height: 2.8rem;
-  max-width: 70%;
+  max-width: 60%;
   color: #999999;
   margin: 0px 0 20px 0;
 }

@@ -2,7 +2,7 @@
 // -------------------------
 
 .BlogHeader {
-    margin: 0 0 70px 10%;
+    margin: 0 0 70px 6%;
     padding: 25px 0 0 0;
     font-family: $font_serif;
 }
@@ -15,7 +15,7 @@
         margin: 20px 10% 20px 0;
     }
         .BlogTitle--alt {
-            color: $primary_color;
+            color: $accent_color;
         }
     .BlogDescription {
         font-family: $font_sans;
@@ -38,7 +38,7 @@
     }
 
 .BlogContent {
-    margin: 0 0 75px 10%;
+    margin: 0 0 75px 6%;
 }
 
     // --------------------
@@ -46,7 +46,7 @@
     // --------------------
     
     .BlogPostItem {
-        margin: 0 0 175px 0;
+        margin: 0 0 75px 0;
     }         
         .BlogPostItem-Metadata {
             display: inline-block;
@@ -62,16 +62,17 @@
         .BlogPostItem-Title {
             font-family: $font_serif;
             font-size: 3.2rem;
+            line-height: 4.4rem;
             // line-height: 5.2rem;
             color: $text_dark_color;
-            margin: 20px 0 20px 0;
-            max-width: 70%;
+            margin: 15px 0 15px 0;
+            max-width: 60%;
         }
         .BlogPostItem-Excerpt {
             font-family: $font_sans;
             font-size: 1.8rem;
             line-height: 2.8rem;
-            max-width: 70%;
+            max-width: 60%;
             color: $text_light_color;
             margin: 0px 0 20px 0;
         }
