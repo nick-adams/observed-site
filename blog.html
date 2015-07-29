@@ -13,7 +13,7 @@ layout: blog
                 {{ post.date | date: '%B %d, %Y' }}
             </p>
             <h2 class="BlogPostItem-Title">
-                <a href="{{ post.url }}" class="Link--postTitle">{{ post.title }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="Link--postTitle">{{ post.title }}</a>
             </h2>
             <h3 class="BlogPostItem-Excerpt">{{ post.excerpt }}</h3>
         </div>
