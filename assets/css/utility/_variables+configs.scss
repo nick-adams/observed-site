@@ -2,9 +2,10 @@
 // -------------------------
 
 // Layout & Grid
-$max_width:     1280px;
-$fixed_width:   1080px;
-$gutter:        40px; // adjusts gutter width for grid
+$max_width:         1280px;
+$fixed_width:       1080px;
+$gutter:            40px; // adjusts gutter width for grid
+$max_width_blog:    760px; // for blog posts
 
 // Global Display
 $border_radius: 4px;

@@ -5,6 +5,7 @@ layout: default
 <section class="ContentContainer--full Content-Home">
         
     <div class="OpeningLetter">
+    
         <p>Hello,</p>
 
         <p>As hinted at above, we're building a tool that we think can really improve the user research process on software teams. Why are we so sure? Well, we are such a team. We've dealt with many of the pain points around organizing and making sense of research.</p>
@@ -13,17 +14,20 @@ layout: default
 
         <p>Just fill out this 7 question survey, provide your email, and we'll be in touch.</p> 
 
+        <!-- TypeForm Embed Snippet -->
         <a class="ButtonPrimary typeform-share link" href="https://nickadams.typeform.com/to/oPOkbW" data-mode="1" target="_blank">Ok, I'm intrigued. Launch the survey!</a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
         <p>If you're looking for more, you can also check <a class="LinkPrimary" href="{{ base.url }}blog/">out our blog.</a></p>
  
         <p>Thank you for your time.</p>
 
         <p><em>Craig, Nick, and Nick.</em></p>
+
     </div>    
 
     <div class="LatestBlogPosts">
+        
         <h4 class="LatestBlogPosts-Title">Latest Blog Posts</h4>
         <ul class="LatestBlogPosts-List">
         {% for post in site.posts limit:3 %}
@@ -39,6 +43,5 @@ layout: default
         </ul>
    
     </div>
-   
 
 </section>

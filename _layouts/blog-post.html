@@ -5,17 +5,17 @@ layout: blog
 <!-- Blog Post Layout -->
 <section class="ContentContainer--full BlogContent">
 
-    <article class="BlogPost">
+    <article class="PostFull">
 
         <a class="Link--return" href="{{ site.baseurl }}/blog/">&larr; All Posts</a>
 
-        <h2 class="BlogPost-Title">{{ page.title}}</h2>
+        <h2 class="PostFull-Title">{{ page.title}}</h2>
 
-        <h3 class="BlogPost-Excerpt">{{ page.excerpt }}</h3>
+        <h3 class="PostFull-Excerpt">{{ page.excerpt }}</h3>
 
         {{ content }}
 
-        <div class="BlogPost-Byline">
+        <div class="PostFull-Byline">
             by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}
         </div>
 

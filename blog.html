@@ -7,15 +7,15 @@ layout: blog
     
     <!-- All Blog Posts  -->
     {% for post in site.posts %}
-        <div class="BlogPostItem ">
-            <p class="BlogPostItem-Metadata">
+        <div class="PostShort">
+            <p class="PostShort-Metadata">
                 <!-- by {{ post.author }} on  -->
                 {{ post.date | date: '%B %d, %Y' }}
             </p>
-            <h2 class="BlogPostItem-Title">
+            <h2 class="PostShort-Title">
                 <a href="{{ site.baseurl }}{{ post.url }}" class="Link--postTitle">{{ post.title }}</a>
             </h2>
-            <h3 class="BlogPostItem-Excerpt">{{ post.excerpt }}</h3>
+            <h3 class="PostShort-Excerpt">{{ post.excerpt }}</h3>
         </div>
     {% endfor %}
 

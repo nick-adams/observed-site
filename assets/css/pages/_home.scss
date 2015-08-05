@@ -25,9 +25,9 @@
     
     .LatestBlogPosts {
         width: 100%;
-        max-width: $max_width;
-        margin: 0 auto 0;
-        padding: 75px 50px;
+        max-width: $max_width_blog;
+        margin: 0 auto 0 auto;
+        padding: 75px 50px 25px 50px;
         background-color: lighten($gray_xlight_color, 17%);
     }
         .LatestBlogPosts-Title {
@@ -51,12 +51,13 @@
                 margin: 50px 0;
             }
 
-        .LatestBlogPost-Date {
-            font-size: 1.6rem;
-            text-transform: uppercase;
-            color: $text_light_color;
-        }
+            .LatestBlogPost-Date {
+                font-size: 1.4rem;
+                letter-spacing: 0.25rem;
+                text-transform: uppercase;
+                color: $text_light_color;
+            }
 
-        .LatestBlogPost-Title {
-            font-weight: 800;
-        }
+            .LatestBlogPost-Title {
+                font-weight: 800;
+            }

@@ -211,7 +211,7 @@ p {
 }
 .ButtonPrimary:hover {
   background-color: #F5A623;
-  color: #FFFFFF;
+  color: #172F3D;
 }
 
 .Button--small {
@@ -343,8 +343,47 @@ p {
 
 .Content-Footer {
   clear: both;
+  margin: 75px auto 0 auto;
+  padding: 25px 0;
   border-top: 1px solid #e6e6e6;
-  margin: 75px auto 25px auto;
+  max-width: 1280px;
+}
+
+.FooterNav {
+  max-width: 1280px;
+  padding: 30px 100px;
+  margin: 25px auto 25px auto;
+}
+
+.FooterNav-SignOff {
+  font-family: "PT Serif";
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: none;
+  color: #CACFD5;
+  margin: 0;
+}
+
+.FooterNav-Contact {
+  font-family: "Karla";
+  font-size: 1.4rem;
+  color: #CACFD5;
+  margin: 75px 0 0 0;
+}
+
+.FooterNav-Copyright {
+  font-family: "Karla";
+  font-size: 1.2rem;
+  color: #CACFD5;
+  margin: 0;
+}
+
+.Content-BlogFooter {
+  clear: both;
+  margin: 75px auto 0 auto;
+  padding: 25px 0;
+  border-top: 1px solid #e6e6e6;
+  max-width: 760px;
 }
 
 .FooterNav {
@@ -398,9 +437,9 @@ p {
 
 .LatestBlogPosts {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto 0;
-  padding: 75px 50px;
+  max-width: 760px;
+  margin: 0 auto 0 auto;
+  padding: 75px 50px 25px 50px;
   background-color: #f7f7f7;
 }
 
@@ -427,7 +466,8 @@ p {
 }
 
 .LatestBlogPost-Date {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
   color: #999999;
 }
@@ -570,12 +610,17 @@ p {
 
 .BlogHeader {
   margin: 0 0 70px 0;
-  padding: 25px 0 25px 6%;
+  padding: 25px 0;
   font-family: "PT Serif";
   background-color: #172F3D;
 }
 
-.BlogTitle {
+.BlogCover {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.BlogCover-Title {
   font-family: "PT Serif";
   font-weight: 400;
   font-size: 3.2rem;
@@ -584,39 +629,38 @@ p {
   margin: 20px 10% 20px 0;
 }
 
-.BlogTitle--alt {
+.BlogCover-Title--alt {
   color: #F5A623;
 }
 
-.BlogDescription {
+.BlogCover-Description {
   font-family: "Karla";
   font-size: 1.6rem;
   line-height: 2.8rem;
   color: #999999;
-  max-width: 760px;
-  margin: 0 10% 20px 0;
+  margin: 0 0 20px 0;
 }
 
-.BlogByline {
+.BlogCover-Byline {
   font-family: "PT Serif";
   font-size: 1.3rem;
   font-style: italic;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   color: #999999;
-  padding: 10px 10% 0 0;
-  border-top: 1px solid #22465b;
+  padding: 10px 0 0 0;
 }
 
 .BlogContent {
-  margin: 0 0 75px 6%;
+  max-width: 760px;
+  margin: 0 auto 75px auto;
 }
 
-.BlogPostItem {
+.PostShort {
   margin: 0 0 75px 0;
 }
 
-.BlogPostItem-Metadata {
+.PostShort-Metadata {
   display: inline-block;
   border-top: 2px solid #666666;
   font-family: "Karla";
@@ -628,25 +672,24 @@ p {
   padding: 0;
 }
 
-.BlogPostItem-Title {
+.PostShort-Title {
   font-family: "PT Serif";
   font-size: 3.2rem;
   line-height: 4.4rem;
   color: #333333;
   margin: 15px 0 15px 0;
-  max-width: 60%;
+  max-width: 90%;
 }
 
-.BlogPostItem-Excerpt {
+.PostShort-Excerpt {
   font-family: "Karla";
   font-size: 1.8rem;
   line-height: 2.8rem;
-  max-width: 60%;
   color: #999999;
   margin: 0px 0 20px 0;
 }
 
-.BlogPostItem-Byline {
+.PostShort-Byline {
   display: inline-block;
   padding: 5px 0 0 0;
   margin: 0 0 35px 0;
@@ -656,12 +699,12 @@ p {
   color: #666666;
 }
 
-.BlogPost {
+.PostFull {
   max-width: 760px;
   margin: 0 0 175px 0;
 }
 
-.BlogPost-Title {
+.PostFull-Title {
   font-family: "PT Serif";
   font-size: 4.6rem;
   line-height: 5.2rem;
@@ -669,7 +712,7 @@ p {
   margin: 25px 0 40px 0;
 }
 
-.BlogPost-Excerpt {
+.PostFull-Excerpt {
   font-family: "Karla";
   font-size: 2.2rem;
   line-height: 4.6rem;
@@ -678,7 +721,7 @@ p {
   margin: 0 0 30px 0;
 }
 
-.BlogPost p {
+.PostFull p {
   font-family: "PT Serif";
   font-size: 1.8rem;
   line-height: 3.8rem;
@@ -686,13 +729,13 @@ p {
   padding: 0 0 0 100px;
 }
 
-.BlogPost img {
+.PostFull img {
   display: inline-block;
   margin: 25px 0 25px -100px;
   max-width: 760px;
 }
 
-.BlogPost blockquote > p {
+.PostFull blockquote > p {
   font-family: "Karla";
   font-style: italic;
   font-size: 2.8rem;
@@ -703,6 +746,6 @@ p {
   margin: 25px 0 25px 0;
 }
 
-.BlogPost-Byline {
+.PostFull-Byline {
   float: right;
 }
