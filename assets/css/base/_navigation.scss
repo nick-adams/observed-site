@@ -1,8 +1,9 @@
-// Navigation
+// Navigation Styles
 // -------------------------
 
 
-.PrimaryNav {
+// Primary Nav in the Header on the Home Page
+.NavPrimary {
     margin: 0 auto 0 auto;
     display: flex;
     align-content: stretch;
@@ -10,7 +11,7 @@
     max-width: $max_width;
     padding: 50px 50px 0 50px;
 }
-    .PrimaryNav-Home {
+    .NavPrimary-Home {
         position: relative;
         margin: 0;
         font-family: $font_serif;
@@ -20,15 +21,15 @@
         flex: 1;
         color: $gray_xlight_color;
     }
-    // .PrimaryNav-List--h {
+    // .NavPrimary-List--h {
     //     display: inline;
     //     list-style-type: none;
     //     list-style-position: inside;
     //     margin: 0;
     //     padding: 0;
     // }
-    // .PrimaryNav-List--v {}
-    //     .PrimaryNav-Item--h {
+    // .NavPrimary-List--v {}
+    //     .NavPrimary-Item--h {
     //         display: inline-block;
     //         margin:0 0 0 75px;
     //         font-family: aktiv-grotesk-std;
@@ -36,10 +37,34 @@
     //         font-weight: 400;
     //         text-transform: uppercase;
     //     }
-    //         .PrimaryNav-Item--h:first-child {
+    //         .NavPrimary-Item--h:first-child {
     //             margin: 0;
     //         }
-    //     .PrimaryNav-Item--v {
+    //     .NavPrimary-Item--v {
 
     //     }
 
+
+// Nav in the Footers
+.NavFooter {
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    max-width: $max_width;
+    padding: 25px 0;
+}
+    .NavFooter-Logo {
+        position: relative;
+        margin: 0;
+        font-family: $font_serif;
+        font-size: 2.0rem;
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+        flex: 1;
+        color: $gray_xlight_color;
+    }
+    .NavFooter-Tagline {
+        font-size: 1.6rem;
+        flex: 3;
+    }

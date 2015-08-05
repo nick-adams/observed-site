@@ -266,7 +266,7 @@ p {
   color: #FFFFFF;
 }
 
-.PrimaryNav {
+.NavPrimary {
   margin: 0 auto 0 auto;
   display: flex;
   align-content: stretch;
@@ -275,7 +275,7 @@ p {
   padding: 50px 50px 0 50px;
 }
 
-.PrimaryNav-Home {
+.NavPrimary-Home {
   position: relative;
   margin: 0;
   font-family: "PT Serif";
@@ -284,6 +284,31 @@ p {
   letter-spacing: 0.25rem;
   flex: 1;
   color: #CCCCCC;
+}
+
+.NavFooter {
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-content: stretch;
+  justify-content: flex-end;
+  max-width: 1280px;
+  padding: 25px 0;
+}
+
+.NavFooter-Logo {
+  position: relative;
+  margin: 0;
+  font-family: "PT Serif";
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  flex: 1;
+  color: #CCCCCC;
+}
+
+.NavFooter-Tagline {
+  font-size: 1.6rem;
+  flex: 3;
 }
 
 .Content-Header {
@@ -343,56 +368,27 @@ p {
 
 .Content-Footer {
   clear: both;
-  margin: 75px auto 0 auto;
+  margin: 100px auto 0 auto;
   padding: 25px 0;
   border-top: 1px solid #e6e6e6;
   max-width: 1280px;
 }
 
-.FooterNav {
-  max-width: 1280px;
-  padding: 30px 100px;
-  margin: 25px auto 25px auto;
-}
-
-.FooterNav-SignOff {
-  font-family: "PT Serif";
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  text-transform: none;
-  color: #CACFD5;
-  margin: 0;
-}
-
-.FooterNav-Contact {
-  font-family: "Karla";
-  font-size: 1.4rem;
-  color: #CACFD5;
-  margin: 75px 0 0 0;
-}
-
-.FooterNav-Copyright {
-  font-family: "Karla";
-  font-size: 1.2rem;
-  color: #CACFD5;
-  margin: 0;
-}
-
 .Content-BlogFooter {
   clear: both;
-  margin: 75px auto 0 auto;
+  margin: 100px auto 0 auto;
   padding: 25px 0;
   border-top: 1px solid #e6e6e6;
   max-width: 760px;
 }
 
 .FooterNav {
-  max-width: 1280px;
+  max-width: 100%;
   padding: 30px 100px;
   margin: 25px auto 25px auto;
 }
 
-.FooterNav-SignOff {
+.FooterNav-Logo {
   font-family: "PT Serif";
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -437,7 +433,7 @@ p {
 
 .LatestBlogPosts {
   width: 100%;
-  max-width: 760px;
+  max-width: 1280px;
   margin: 0 auto 0 auto;
   padding: 75px 50px 25px 50px;
   background-color: #f7f7f7;
